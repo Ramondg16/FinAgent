@@ -8,6 +8,9 @@ from utils.parser import extract_risk_factors
 from agents.research_agent import generate_investment_brief
 from sec_edgar_downloader import Downloader
 
+if "OPENAI_API_KEY" in st.secrets:
+    os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+
 load_dotenv(Path(__file__).parent / ".env")
 
 st.set_page_config(
