@@ -4,7 +4,7 @@ langchain-community==0.4.2
 openai==2.41.0
 sec-edgar-downloader==5.1.0
 transformers==4.40.0
-tokenizers==0.19.1
+tokenizers==0.21.0
 torch
 yfinance==1.4.1
 streamlit==1.58.0
